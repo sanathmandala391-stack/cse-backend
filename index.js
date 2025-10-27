@@ -15,7 +15,7 @@ const complaintRoutes=require("./routes/complaintRoutes");
 
  const PORT=process.env.PORT || 4000;
 app.use(cors());
-app.options("*/", cors());
+app.options("/*", cors());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 
